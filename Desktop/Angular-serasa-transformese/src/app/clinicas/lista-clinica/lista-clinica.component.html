@@ -1,0 +1,54 @@
+<div class="main-container col-sm-6 row">
+  <div *ngFor="let clinica of clinicas" class="card col-4">
+    <div class="card-body">
+      <h5 class="card-title">{{ clinica.nome }}</h5>
+      <p class="card-text">{{ clinica.id }}</p>
+      <a (routerLink)="['/clinica-detalhe', clinica.id]" class="btn btn-primary">Mais detalhes</a>
+      <a (routerLink)="['/atualizar-clinica', clinica.id]" class="btn btn-primary">Atualizar</a>
+    </div>
+  </div>
+  </div>
+
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.css"
+    integrity="sha256-NAxhqDvtY0l4xn+YVa6WjAcmd94NNfttjNsDmNatFVc=" crossorigin="anonymous" />
+  <div class="container mt-5">
+    <div class="content contact-list">
+      <div class="card card-default">
+        <div class="card-header align-items-center px-5 px-md-8">
+          <h2>Contatos</h2>
+
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-add-contact">Adicionar
+            Contatos</button>
+        </div>
+
+        <div class="card-body px-5 px-md-8" *ngFor="let clinica of clinicas">
+          <div class="row">
+            <div class="col-lg-6 col-xl-4 col-md-6 col-sm-12">
+              <div class="card card-default p-10">
+                <a href="javascript:0" class="media text-secondary" data-toggle="modal" data-target="#modal-contact">
+                  <img src="https://bootdey.com/img/Content/avatar/avatar{{clinica.id}}.png"
+                    class="mr-3 img-fluid rounded" alt="Avatar Image" />
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-2 text-dark">{{ clinica.nome }}</h5>
+                    <ul class="list-unstyled text-smoke text-smoke">
+                      <li class="d-flex">
+                        <i class="mdi mdi-map mr-1"></i>
+                        <span>Avenida Paulista, 1500</span>
+                      </li>
+                      <li class="d-flex">
+                        <i class="mdi mdi-email mr-1"></i>
+                        <span>clinicaserasa@gmail.com</span>
+                      </li>
+                      <li class="d-flex">
+                        <i class="mdi mdi-phone mr-1"></i>
+                        <span>(11)5544 7632</span>
+                      </li>
+                      <a (routerLink)="['/clinica-detalhe', clinica.id]" class="btn btn-primary">Mais detalhes</a>
+                      <a (routerLink)="['/atualizar-clinica', clinica.id]" class="btn btn-primary">Atualizar</a>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+            </div>

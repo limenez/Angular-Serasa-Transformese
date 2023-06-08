@@ -1,0 +1,61 @@
+.modelo1{
+  width: 500px;
+  font-family: verdana;
+  color: #000;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  overflow:unset;
+  font-size: 12px;
+}
+
+h1{
+
+  padding: 0px 0px 10px 0px;
+  text-align: center;
+}
+
+.titulo2{
+  font-size: 14px;
+}
+
+div{
+  margin: 0px 0px 20px;
+}
+
+.rotulos{
+  float: left;
+  width: 20%;
+  text-align: right;
+  padding-right: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.entrada{
+  border: none;
+  color: #525252;
+  height: 30px;
+  line-height: 15px;
+  padding: 5px 0px 0px 5px;
+  width: 70%;
+  background-color: #cfcafc;
+}
+
+#mensagem{
+  height: 100px;
+  padding: 5px 0px 0px 5px;
+  width: 70%;
+}
+
+.btn{
+  background-color: #000;
+  border: none;
+  padding: 10px 25px 10px 25px;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  text-shadow: 1px 1px 1px #FFE477;
+  font-weight: bold;
+  box-shadow: 1px 1px 1px #3D3D3D;
+}

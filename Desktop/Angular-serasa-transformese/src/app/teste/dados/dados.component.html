@@ -1,0 +1,53 @@
+<div class="container main-container top-10">
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- Interpolação  -->
+
+  <p>Nome: {{ nome }}</p>
+  <p>Sobrenome: {{ sobrenome }}</p>
+
+  <br>
+  <br>
+
+  <!-- Pela propriedade -->
+
+  <a [href]="linkSite">Link do site</a>
+
+  <br>
+  <button class="btn btn-primary" [disabled]="contador < 5">Teste</button>
+
+  <button class="btn btn-warning" (click)='adicionaUm()'>Somar + 1</button>
+
+  <p> O valor do contador é {{ contador }}</p>
+
+  <button class="btn btn-danger" (click)='zerarContador()'>Zerar</button>
+
+  <!-- <img [src]="linkDaImagem" alt=""> -->
+
+  <br>
+  <!-- Pelo evento -->
+
+  <!-- <input type="text" > -->
+
+  <!-- <button (click)='adicionaUm()'>Somar + 1</button> -->
+
+  <!-- <button (click)='menosUm()'>Menos - 1</button> -->
+
+  <!-- <p>O valor do contador é {{ contador }}</p> -->
+
+  <!-- Envio e Recebimento simultâneo-->
+
+  <br>
+  <input type="text" (keyup)="teclar($event)" placeholder="Digite o seu nome">
+  <br>
+  <br>
+  <label > Seu nome é {{ nome }}</label>
+  <br>
+
+  <!-- Two-Way Binding -->
+  <input type="text" (ngModel)="nome", placeholder="Digite seu nome">
+
+</div>

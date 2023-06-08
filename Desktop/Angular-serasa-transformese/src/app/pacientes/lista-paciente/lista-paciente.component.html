@@ -1,0 +1,12 @@
+<div class="main-container col-sm-6 row">
+  <div *ngFor="let paciente of pacientes" class="card col-4">
+    <div class="card-body">
+      <h5 class="card-title">Nome: {{ paciente.nome }}</h5>
+      <p class="card-text">ID: {{ paciente.id }}</p>
+      <p class="card-text">Email: {{ paciente.email }}</p>
+      <p class="card-text">CPF: {{ paciente.cpf }}</p>
+      <a href="#" class="btn btn-primary">Mais detalhes</a>
+      <a class="btn btn-danger" (click)="excluir(paciente)">Deletar</a>
+    </div>
+  </div>
+</div>
